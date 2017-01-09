@@ -6,3 +6,6 @@ puts i
 #age en seconde
 a =32*i
 puts a
+
+
+puts Time.new "32/05/1985"
