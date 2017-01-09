@@ -1,11 +1,9 @@
 puts "hello"
 puts"bonjour"
-puts"quel est votre nom?"
+self.puts"quel est votre nom?"
 
 name=gets
 
 puts"comment vas tu #{name} ?"
 
-puts "salut #{name} !"
-puts "salut #{name} !"
-puts "salut #{name} !"
+3.times do puts "Hello #{name}" end
