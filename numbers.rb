@@ -7,5 +7,7 @@ puts i
 a =32*i
 puts a
 
+now = Time.now
+birth_time = Time.new "18/04/1984"
 
-puts Time.new "32/05/1985"
+age_in_sec = now-birth_time
