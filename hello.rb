@@ -1,6 +1,6 @@
 puts "hello"
 puts"bonjour"
-self.puts"quel est votre nom?"
+puts"quel est votre nom?"
 
 name=gets
 
