@@ -3,6 +3,9 @@
 #5.times do |i| tirage.push 1 + rand(45) end
 #puts tirage.inspect
 
+
+
+=begin
 #affichage du montant (entre 100 & 500k€)
 #puts "la cagnote est : #{cagnote}"
 cagnote = 100.000
@@ -17,3 +20,13 @@ if vendredi_13
 end
 
 puts "la cagnote est de #{cagnote}"
+=end
+
+# demander une grille de jeux
+
+5.times do puts "Choisir vos chiffres" end
+
+chiffre = gets
+
+#afficher si gagné ou perdu
+
