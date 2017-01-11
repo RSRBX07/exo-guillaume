@@ -37,7 +37,7 @@ end
 #afficher si gagné ou perdu
   
 grille = (1..45).to_a
-
+ 
 selection = grille.shuffle.take 5
 
 if chiffres.equal?(selection)
@@ -46,8 +46,8 @@ else
     puts ("perdant")
 end 
 
-5.times {|i| print String(chiffres[i-1]) + " * "}
+5.times {|i| print String(chiffres[i-1]) + "*"}
 puts 
-5.times {|i| print String(selection[i-1]) + " * "}
+5.times {|i| print String(selection[i-1]) + "*"}
 
 
