@@ -29,10 +29,11 @@ def roll (cheated_value = false)
     if cheated_value == false
         faces = [1,2,3,4,5,6]
         index =rand 0..5
-        return faces [index]  
+        faces [index]  
     else
         cheated_value
     end
 end
-    puts roll
-    puts roll 4
+
+puts roll
+puts roll 4
