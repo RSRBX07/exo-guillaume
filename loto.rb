@@ -15,7 +15,7 @@ vendredi_13 = true
 
 if vendredi_13
     cagnote = 2.000.000
-    else 
+    else  
     cagnote = 100.000
 end
 
@@ -24,9 +24,30 @@ puts "la cagnote est de #{cagnote}"
 
 # demander une grille de jeux
 
-5.times do puts "Choisir vos chiffres" end
+chiffres = []
 
-chiffre = gets
+5.times do       
+    puts "Choisir vos chiffres" 
+    chiffres.push(gets)
+end
+
+
+#puts chiffres
 
 #afficher si gagné ou perdu
+  
+grille = (1..45).to_a
+
+selection = grille.shuffle.take 5
+
+if chiffres.equal?(selection)
+    puts("gagnant")
+else 
+    puts ("perdant")
+end 
+
+5.times {|i| print String(chiffres[i-1]) + " * "}
+puts 
+5.times {|i| print String(selection[i-1]) + " * "}
+
 
