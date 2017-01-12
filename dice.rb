@@ -18,7 +18,6 @@ puts "Le code postal de ma ville est #{code}"
 
 
 
-
 =begin
 #Hash exemple
 meta = {
