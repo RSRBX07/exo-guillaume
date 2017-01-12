@@ -1,3 +1,18 @@
+meta = {
+    "place" => "Roubaix", 
+    "author" => "Guillaume"
+}
+
+place = meta["place"]
+author = meta["Guillaume"] 
+
+puts "Made with love @ #{place} by #{author}"
+
+
+
+
+
+
 
 =begin
 # afficher resultat de dés à 6 faces : 
@@ -5,6 +20,7 @@ faces = [1,2,3,4,5,6]
 roll =faces[rand 6]
 puts roll
 =end 
+
 
 =begin
 #ecrire une methode roll pour retourner comptenu du dés : 
@@ -15,6 +31,7 @@ def roll
 end   
     puts roll
 =end
+
 =begin
 #dés pipé : 
 def roll_cheated
@@ -25,6 +42,8 @@ end
     puts roll_cheated
 =end
 
+
+=begin
 def roll (cheated_value = false)
     if cheated_value == false
         faces = [1,2,3,4,5,6]
@@ -37,3 +56,4 @@ end
 
 puts roll
 puts roll 4
+=end
