@@ -4,7 +4,7 @@ meta = {
 }
 
 place = meta["place"]
-author = meta["Guillaume"] 
+author = meta["author"] 
 
 puts "Made with love @ #{place} by #{author}"
 
