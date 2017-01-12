@@ -1,21 +1,17 @@
 #Hash code postal
 code_postal = {
-    "lille" => 59000, 
-    "paris" => 75000, 
-    "nice"=>06000, 
-    "lyon"=>69000
+    :lille => 59000, 
+    :paris => 75000, 
+    :nice=> 06000, 
+    :lyon=> 69000
 }
 
 puts "Votre ville ?"
-ville=gets.chomp 
+ville=gets.chomp.to_sym
 
 code = code_postal[ville]
 
 puts "Le code postal de ma ville est #{code}"
-
-
-
-
 
 
 =begin
