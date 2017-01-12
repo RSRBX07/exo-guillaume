@@ -34,13 +34,24 @@ end
 puts nombre num 1
 =end
 
-
+=begin
 def in_french num       
     tte_lettres = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf"]
     return tte_lettres [num]
 end 
 
 puts("Choisir un chiffre entre 0 et 9")
+num = gets.chomp.to_i
+
+puts in_french num
+=end
+
+def in_french num       
+    tte_lettres = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "douze", "treize", "quatorze", "quinze", "seize", "dix sept", "dix huit", "dix neuf"]
+    return tte_lettres [num]
+end 
+
+puts("Choisir un chiffre entre 0 et 19")
 num = gets.chomp.to_i
 
 puts in_french num
