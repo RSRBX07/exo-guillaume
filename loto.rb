@@ -1,53 +1,55 @@
 #afficher un tirage de 5 nombres entre 1-45 du loto
-#tirage = []
-#5.times do |i| tirage.push 1 + rand(45) end
-#puts tirage.inspect
+class Loto
+ def tirage = []
+    5.times do |i| tirage.push 1 + rand(45) end
+    puts tirage.inspect
+end
+end
 
 
 
-=begin
 #affichage du montant (entre 100 & 500k€)
 #puts "la cagnote est : #{cagnote}"
-cagnote = 100.000
+# cagnote = 100.000
 
-#le vendredi 13 la cagnote est de 2m
-vendredi_13 = true
+# #le vendredi 13 la cagnote est de 2m
+# vendredi_13 = true
 
-if vendredi_13
-    cagnote = 2.000.000
-    else  
-    cagnote = 100.000
-end
+# if vendredi_13
+#     cagnote = 2.000.000
+#     else  
+#     cagnote = 100.000
+# end
 
-puts "la cagnote est de #{cagnote}"
-=end
-
-# demander une grille de jeux
-
-chiffres = []
-
-5.times do       
-    puts "Choisir vos chiffres" 
-    chiffres.push(gets)
-end
+# puts "la cagnote est de #{cagnote}"
 
 
-#puts chiffres
+#demander une grille de jeux
 
-#afficher si gagné ou perdu
+# chiffres = []
+
+# 5.times do       
+#     puts "Choisir vos chiffres" 
+#     chiffres.push(gets)
+# end
+
+
+# #puts chiffres
+
+# #afficher si gagné ou perdu
   
-grille = (1..45).to_a
+# grille = (1..45).to_a
  
-selection = grille.shuffle.take 5
+# selection = grille.shuffle.take 5
 
-if chiffres.equal?(selection)
-    puts("gagnant")
-else 
-    puts ("perdant")
-end 
+# if chiffres.equal?(selection)
+#     puts("gagnant")
+# else 
+#     puts ("perdant")
+# end 
 
-5.times {|i| print String(chiffres[i-1]) + "*"}
-puts 
-5.times {|i| print String(selection[i-1]) + "*"}
+# 5.times {|i| print String(chiffres[i-1]) + "*"}
+# puts 
+# 5.times {|i| print String(selection[i-1]) + "*"}
 
 
