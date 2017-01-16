@@ -47,8 +47,10 @@ puts in_french num
 =end
 
 def in_french num       
-    tte_lettres = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "douze", "treize", "quatorze", "quinze", "seize", "dix sept", "dix huit", "dix neuf"]
+    tte_lettres = ["zero", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "douze", "treize", "quatorze", "quinze", "seize"]
     return tte_lettres [num]
+
+end
 end 
 
 puts("Choisir un chiffre entre 0 et 19")
