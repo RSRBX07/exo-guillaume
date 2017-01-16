@@ -76,3 +76,9 @@ end
 puts roll
 puts roll 4
 =end
+
+class Dice 
+    
+  
+end
+  
