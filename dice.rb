@@ -81,7 +81,5 @@ class Dice
     def roll (cheated_value = false)
     cheated_value
 end
-  
-    puts roll
-    puts roll 4
 end
+ 
