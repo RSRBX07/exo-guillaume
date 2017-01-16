@@ -1,3 +1,4 @@
+=begin
 #Hash code postal
 code_postal = {
     :lille => 59000, 
@@ -12,7 +13,7 @@ ville=gets.chomp.to_sym
 code = code_postal[ville]
 
 puts "Le code postal de ma ville est #{code}"
-
+=end
 
 =begin
 #Hash exemple
@@ -42,7 +43,7 @@ puts roll
 
 =begin
 #ecrire une methode roll pour retourner comptenu du dés : 
-def roll
+def ro ll
     faces = [1,2,3,4,5,6]
     index =rand 0..5
     return faces [index]
