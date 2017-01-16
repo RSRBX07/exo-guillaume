@@ -62,7 +62,7 @@ end
 =end
 
 
-=begin
+
 def roll (cheated_value = false)
     if cheated_value == false
         faces = [1,2,3,4,5,6]
@@ -75,7 +75,7 @@ end
 
 puts roll
 puts roll 4
-=end
+
 
 class Dice 
     
