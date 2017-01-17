@@ -19,7 +19,7 @@
 
 #Loto
 #test tirage 5 nombres de loto
-require './loto2.rb'
+require './loto.rb'
 
 loto=Loto.new
 

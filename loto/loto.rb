@@ -3,6 +3,14 @@ class Loto
 attr_reader :picked_balls
 #attr_writer :picked_balls
 
+
+  def initialize 
+    puts "on initialise une instance de loto"
+    @picked_balls = []
+  end
+  
+  
+  
   def self.get_grid
       grid = []
       5.times do
