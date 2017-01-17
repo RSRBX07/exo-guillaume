@@ -39,13 +39,22 @@ class Loto
 
   # affichage du montant de la cagnote
   # entre 100 et 500.000 Euros
-  # le vendredi 13, la cagnote est de 2 millions
-  def vendredi_13?
-    Date.today.day == 13 && Date.today.friday?
+ 
+
+
+  def check_grid grid
+    # afficher si gagne ou perdu
+    if grid.sort == draw.sort
+      puts "You win !"
+    else
+      puts "You loose !"
+    end
   end
 
-  
+  #private
 
+  private 
+  
   def prize
     cagnote = if vendredi_13?
         2_000_000
@@ -66,16 +75,9 @@ class Loto
     @picked_balls
   end
 
-  def check_grid grid
-    # afficher si gagne ou perdu
-    if grid.sort == draw.sort
-      puts "You win !"
-    else
-      puts "You loose !"
-    end
+   # le vendredi 13, la cagnote est de 2 millions
+  def vendredi_13?
+    Date.today.day == 13 && Date.today.friday?
   end
-
-  #fonction pour ne plus rejouer apres le tirage  
-
   
 end
