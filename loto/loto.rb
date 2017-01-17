@@ -1,13 +1,15 @@
 require 'date'
+
 class Loto
 attr_reader :picked_balls
-#attr_reader :saved_grid
-attr writer :picked_balls
-attr writer :saved_grid
+attr_reader :saved_grid
+attr_writer :picked_balls
+attr_writer :saved_grid
 
   def initialize 
     puts "on initialise une instance de loto"
     @picked_balls = []
+    @saved_grids = []
   end
   
   
@@ -25,13 +27,13 @@ attr writer :saved_grid
     (1..45).to_a.shuffle.take 5
   end
 
-  def picked_balls
-    @picked_balls
-  end
+  # def picked_balls
+  #   @picked_balls
+  # end
 
-  def picked_balls= picking
-  #@picked_balls = picking
-  end
+  # def picked_balls= picking
+  # #@picked_balls = picking
+  # end
 
   def has_winner?
     #comprer tous les bulletins valides avec la grille gagnante
@@ -46,12 +48,10 @@ attr writer :saved_grid
   # enregistre une grille
   # pour le loto courant
   def validate_grid grid
-    if @picked_balls.nil?
-      @saved_grids ||= []
+    if @picked_balls.empty?
       @saved_grids.push grid
     else
       puts "Trop tard" 
-      
     end
   end 
   # demander une grille de jeu
@@ -85,7 +85,7 @@ attr writer :saved_grid
     available_balls = (1..45).to_a
     # shuffle balls and take 5
     # @picked_balls ||= available_balls.shuffle.take(5)
-    @picked_balls ||= available_balls.shuffle.take(5)
+    @picked_balls = available_balls.shuffle.take(5)
 
     puts "Le tirage du jour est : #{@picked_balls.sort}" 
     @picked_balls
