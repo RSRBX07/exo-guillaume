@@ -1,5 +1,7 @@
 require 'date'
 class Loto
+attr_reader :picked_balls
+#attr_writer :picked_balls
 
   def self.get_grid
       grid = []
@@ -12,6 +14,14 @@ class Loto
 
   def self.get_flash
     (1..45).to_a.shuffle.take 5
+  end
+
+  def picked_balls
+    @picked_balls
+  end
+
+  def picked_balls= picking
+  #@picked_balls = picking
   end
 
   def has_winner?
@@ -40,8 +50,6 @@ class Loto
   # affichage du montant de la cagnote
   # entre 100 et 500.000 Euros
  
-
-
   def check_grid grid
     # afficher si gagne ou perdu
     if grid.sort == draw.sort
@@ -51,10 +59,9 @@ class Loto
     end
   end
 
-  #private
+
 
   private 
-  
   def prize
     cagnote = if vendredi_13?
         2_000_000
@@ -80,4 +87,4 @@ class Loto
     Date.today.day == 13 && Date.today.friday?
   end
   
-end
+end 
