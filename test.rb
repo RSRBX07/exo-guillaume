@@ -13,20 +13,21 @@
 
 #     puts my_dice.roll
 #     puts my_dice.roll 4
- 
+
 
 
 
 #Loto
 #test tirage 5 nombres de loto
-# require './loto2.rb'
+require './loto2.rb'
 
-#     my_loto = Loto.new
-#     #puts my_loto.tirage
+    my_loto = Loto.new
+    #puts my_loto.tirage
 
-# my_loto.validate_grid Loto.get_grid
+my_loto.validate_grid Loto.get_grid
+my_loto.has_winner?
+my_loto.validate_grid Loto.get_grid
+# require './french_numbers.rb'
 
-require './french_numbers.rb'
-
-    my_numbers = French_number.new
-    puts my_numbers.in_french gets.chomp.to_i
+#     my_numbers = French_number.new
+#     puts my_numbers.in_french gets.chomp.to_i
