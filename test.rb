@@ -21,12 +21,22 @@
 #test tirage 5 nombres de loto
 require './loto2.rb'
 
-    my_loto = Loto.new
-    #puts my_loto.tirage
+loto=Loto.new
 
-my_loto.validate_grid Loto.get_grid
-my_loto.has_winner?
-my_loto.validate_grid Loto.get_grid
+puts "le tirage est #{loto.picked_balls.inspect}"
+loto.validate_grid loto.get.flash
+loto.has_winner?
+puts "le tirage est #{loto.picked_balls.inspect}"
+
+
+
+
+#puts my_loto.tirage
+
+
+# my_loto.validate_grid Loto.get_grid
+# my_loto.has_winner?
+# my_loto.validate_grid Loto.get_grid
 # require './french_numbers.rb'
 
 #     my_numbers = French_number.new
