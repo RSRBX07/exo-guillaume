@@ -1,8 +1,9 @@
 require 'date'
 class Loto
 attr_reader :picked_balls
-#attr_writer :picked_balls
-
+#attr_reader :saved_grid
+attr writer :picked_balls
+attr writer :saved_grid
 
   def initialize 
     puts "on initialise une instance de loto"
