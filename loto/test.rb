@@ -23,7 +23,6 @@ require './loto2.rb'
 
 loto=Loto.new
 
-
 puts "le tirage est #{loto.picked_balls.inspect}"
 loto.validate_grid loto.get.flash
 loto.has_winner?
