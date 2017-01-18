@@ -1,0 +1,1 @@
+[![CircleCI](https://circleci.com/gh/RSRBX07/exo-guillaume.svg?style=svg)](https://circleci.com/gh/RSRBX07/exo-guillaume)
