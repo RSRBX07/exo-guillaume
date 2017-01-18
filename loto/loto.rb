@@ -24,7 +24,7 @@ attr_writer :saved_grid
   end
 
   def self.get_flash
-    (1..45).to_a.shuffle.take 5
+    #(1..45).to_a.shuffle.take 5
   end
 
   # def picked_balls
