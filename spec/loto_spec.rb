@@ -1,15 +1,18 @@
 require_relative '../loto/loto.rb'
 
 RSpec.describe Loto do 
-  xit 'gets grid' do 
-  Loto.get_grid
+  it 'gets grid' do 
+  #Loto.get_grid
+
+  loto = Loto.new
+  expect(loto).to respond_to :has_winner?
   end
 
-  it 'give a random flash grid' do
+  xit 'give a random flash grid' do
     expect(loto.get_flash).not_to be_nil  
     expect(loto.get_flash).to be_a Array
   end
-  it 'make a draw' do 
+  xit 'make a draw' do 
     loto = Loto.new
     expect(loto).to respond_to :draw
     expect(loto.draw).not_to be_nil
