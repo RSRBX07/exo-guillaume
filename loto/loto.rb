@@ -24,7 +24,7 @@ attr_writer :saved_grid
   end
 
   def self.get_flash
-    #(1..45).to_a.shuffle.take 5
+    (1..45).to_a.shuffle.take 5
   end
 
   # def picked_balls
@@ -81,15 +81,15 @@ attr_writer :saved_grid
     cagnote
   end
 
-  def draw
-    available_balls = (1..45).to_a
-    # shuffle balls and take 5
-    # @picked_balls ||= available_balls.shuffle.take(5)
-    @picked_balls = available_balls.shuffle.take(5)
+  # def draw
+  #   available_balls = (1..45).to_a
+  #   # shuffle balls and take 5
+  #   # @picked_balls ||= available_balls.shuffle.take(5)
+  #   @picked_balls = available_balls.shuffle.take(5)
 
-    puts "Le tirage du jour est : #{@picked_balls.sort}" 
-    @picked_balls
-  end
+  #   puts "Le tirage du jour est : #{@picked_balls.sort}" 
+  #   @picked_balls
+  # end
 
    # le vendredi 13, la cagnote est de 2 millions
   def vendredi_13?

@@ -6,7 +6,7 @@ RSpec.describe Loto do
   end
 
   it 'give a random flash grid' do
-    expect(loto.get_flash).not_to be_nil
+    expect(loto.get_flash).not_to be_nil  
     expect(loto.get_flash).to be_a Array
   end
   it 'make a draw' do 
