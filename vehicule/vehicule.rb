@@ -5,7 +5,7 @@ class Counter
   def add_one
     # counter_file = File.new "./tmp/counter.txt", "r"
     # puts counter_file
-    file.open "./tmp/counter.txt", "w" do |counter_file|
+    file.open "./tmp/counter.txt", "w" do |file|
     file.write new_val
   end 
 
