@@ -9,5 +9,5 @@ class Vehicule
     def move (destination)
       @position = destination
     end
-    
-end
+
+end 
