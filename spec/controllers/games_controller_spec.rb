@@ -18,7 +18,7 @@ require 'rails_helper'
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
 
-RSpec.describe GamesController, type: :controller do
+RSpec.describe GamesController, type: :controller, skip: true do
 
   # This should return the minimal set of attributes required to create a valid
   # Game. As you add validations to Game, be sure to
@@ -52,12 +52,12 @@ RSpec.describe GamesController, type: :controller do
     end
   end
 
-  # describe "GET #new" do
-  #   it "assigns a new game as @game" do
-  #     get :new, params: {}, session: valid_session
-  #     expect(assigns(:game)).to be_a_new(Game)
-  #   end
-  # end
+  describe "GET #new" do
+    it "assigns a new game as @game" do
+      get :new, params: {}, session: valid_session
+      expect(assigns(:game)).to be_a_new(Game)
+    end
+  end
 
   describe "GET #edit" do
     it "assigns the requested game as @game" do
