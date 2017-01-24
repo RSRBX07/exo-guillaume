@@ -2,7 +2,8 @@ class Game < ApplicationRecord
 
 
   def add_player
-    @players +=1 
+    
+    @players += 1
   end 
 
   def remove_player
